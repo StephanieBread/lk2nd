@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+/dts-v1/;
+#include <skeleton32.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	qcom,msm-id = <QCOM_ID_MSM8909 0>,
+		      <245 0x20000>;
+	qcom,board-id = <QCOM_BOARD_ID_MTP 2>,
+			<8 2>;
+};
+
+&lk2nd {
+	model = "Panasonic Toughbook FZ-T1";
+	compatible = "panasonic,fz-t1";
+
+	lk2nd,dtb-files = "msm8909-panasonic-fz-t1";
+};
